@@ -41,9 +41,22 @@ h1 {
   color: white;
 }
 
-h2, a {
+h2,
+h4,
+a {
   font-family: 'latolight', sans-serif;
   font-size: 35px;
+}
+
+h3 {
+  font-family: 'ovoregular', serif;
+  font-size: 20px;
+  line-height: 1.75;
+}
+
+p {
+  font-family: 'latolight', sans-serif;
+  text-align: center;
 }
 
 .blue-text {
@@ -55,11 +68,27 @@ h2, a {
   font-family: 'latoregular', sans-serif;
 }
 
+.white-section-title {
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+  padding-bottom: 15px;
+}
+
+.black-section-title {
+  color: black;
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+  padding-bottom: 15px;
+}
 
 /* navbar styles */
 
 nav {
   position: fixed;
+  background-color: rgba(48, 48, 48, 0.5);
   z-index: 3;
   width: 100%;
   display: flex;
@@ -87,6 +116,7 @@ nav {
 .logo img {
   width: 50px;
 }
+
 
 
 /* header styles */
@@ -121,12 +151,142 @@ header {
 
 
 
+/* mission section styles */
 
-/* section styles */
-
-.mission-statement  {
+.mission {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  padding: 75px 0;
+}
+
+.black-title-border {
+  display: flex;
+  flex-flow: row;
+  padding-bottom: 15px;
+  border-bottom: 1px solid black;
+}
+
+.mission h3 {
+  text-align: center;
+  width: 75%;
+  padding: 25px 0;
+}
+
+.mission h4{
+  font-size: 0.75rem;
+  text-align: center;
+  line-height: 1.75;
+  width: 60%;
+}
+
+/* about section styles */
+
+.about {
+  background-color: #303030;
+  padding: 75px 0;
+}
+
+.eco, .coffee, .community {
+  padding: 50px 0;
+}
+
+i {
+  padding: 25px 0;
+  color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.about p {
+  color: white;
+  line-height: 1.5;
+  text-align: justify;
+  padding: 0 28%;
+}
+
+
+/* menu section styles */
+
+.menu {
+  display: flex;
+  flex-flow: column;
   padding: 100px 0;
+}
+
+.menu p {
+  font-size: 1.5rem;
+  padding: 5px 35px;
+  text-align: left;
+}
+
+.menu-content {
+  padding: 50px 0;
+}
+
+.menu-content .menu-item {
+  float: left;
+}
+.menu-content .menu-price {
+  float: right;
+}
+
+/* seriously section styles */
+
+.seriously {
+  position: relative;
+  display: block;
+  padding: 100px 0;
+  width: auto;
+  background:
+    linear-gradient(
+      rgba(48, 48, 48, 0.8), rgba(48, 48, 48, 0.8)
+      ),
+    url('../image/think-coffee.jpg');
+  background-repeat: no-repeat;
+  background-position: 75%;
+  background-size: cover;
+}
+
+.seriously p {
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: 4px;
+  padding: 15px 0;
+}
+
+/* contact section styles */
+
+.contact {
+  padding: 50px;
+}
+
+form {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 50px 50px;
+}
+
+
+input, textarea {
+  border: 1px solid black;
+  outline: none;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+button {
+  width: 150px;
+  padding: 20px;
+  font-family: 'latolight', serif;
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+::-webkit-input-placeholder {
+  font-family: 'latolight', serif;
+   color: #030303;
 }
