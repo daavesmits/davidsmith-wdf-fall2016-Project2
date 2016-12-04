@@ -1,25 +1,75 @@
 /* font styles */
 
+@font-face {
+    font-family: 'latolight';
+    src: url('../font/lato-light-webfont.eot');
+    src: url('../font/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/lato-light-webfont.woff2') format('woff2'),
+         url('../font/lato-light-webfont.svg#latolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('../font/lato-regular-webfont.eot');
+    src: url('../font/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/lato-regular-webfont.woff2') format('woff2'),
+         url('../font/lato-regular-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ovoregular';
+    src: url('../font/ovo-regular-webfont.eot');
+    src: url('../font/ovo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/ovo-regular-webfont.woff2') format('woff2'),
+         url('../font/ovo-regular-webfont.svg#ovoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 h1 {
-  font-size: 20px;
+  font-family: 'latoregular', serif;
+  font-size: 50px;
+  color: white;
 }
+
+h2, a {
+  font-family: 'latolight', sans-serif;
+  font-size: 35px;
+}
+
+.blue-text {
+  color: #1ac0ee;
+}
+
+.blue-text-title {
+  color: #1ac0ee;
+  font-family: 'latoregular', sans-serif;
+}
+
 
 /* navbar styles */
 
 nav {
   position: fixed;
-  z-index: 2;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  z-index: 3;
   width: 100%;
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  padding: 15px;
 }
 
 .navlink {
   display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 .navlink li {
@@ -28,6 +78,9 @@ nav {
 
 .navlink a {
   color: white;
+  letter-spacing: 3px;
+  font-size: 1rem;
+  font-variant: small-caps;
   text-decoration: none;
 }
 
@@ -41,33 +94,39 @@ nav {
 header {
   position: relative;
   display: block;
-  height: 100vh;
-  z-index: 1;
+  height: 30vh;
+  width: auto;
   background:
     linear-gradient(
-      rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.50)
+      rgba(48, 48, 48, 0.5), rgba(48, 48, 48, 0.5)
       ),
-    url('../image/latte-hero.jpg');
+    url('../image/hero-image.jpg');
   background-repeat: no-repeat;
-  background-position: 50% 0%;
+  background-position: 75%;
   background-size: cover;
 }
 
-.hero-text {
-  height: 100%;
-  display: flex;
+.hero-title {
+  position: relative;
+  top: 25%;
+  right: 3%;
+}
+
+.hero-title h1 {
+  font-family: 'ovoregular';
   flex-direction: column;
+  text-align: right;
+  padding: 5px 0;
+}
+
+
+
+
+/* section styles */
+
+.mission-statement  {
+  display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
-  text-align: center;
-}
-
-.hero-text h1 {
-  font-size: 2rem;
-  color: white;
-  width: 100%;
-}
-
-.hero-text h2 {
-  width: 100%;
-  color: white;
+  padding: 100px 0;
 }
