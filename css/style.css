@@ -84,6 +84,7 @@ p {
   padding-bottom: 15px;
 }
 
+
 /* navbar styles */
 
 nav {
@@ -214,6 +215,13 @@ header {
   padding: 25px 0;
 }
 
+.FadeInFast {
+    opacity:0;
+}
+
+.FadeInSlow {
+    opacity: 0;
+}
 
 @media all and (min-width: 600px) {
   .mission {
