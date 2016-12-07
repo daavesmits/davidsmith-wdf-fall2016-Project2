@@ -26,6 +26,7 @@
       </div>
     </nav>
 
+
     <header>
       <section class="hero-title">
         <h1>Damn.</h1>
@@ -33,6 +34,7 @@
         <h1>Coffee.</h1>
       </section>
     </header>
+
 
     <section class="mission">
       <h2 class="black-title-border">
@@ -51,6 +53,7 @@
         filters. We have like, 79 Mocha pots.
       </h4>
     </section>
+
 
     <section class="about">
       <a id="about"></a>
@@ -71,30 +74,37 @@
       </div>
 
       <div class="coffee">
-          <i class="fa fa-coffee fa-4x"></i>
+        <i class="fa fa-coffee fa-4x"></i>
+        <p>
+          We realize that you don’t have time to listen to the person in front
+           of you list 18 drink modifications for their Pumpkin Spice Latte, so
+           we did away with that by only brewing <span class="blue-text">one type
+           of coffee</span>, with one type of Moka Pot, period. This also affords
+           us the opportunity to select, roast, and brew the shit out of the best
+           damn cup of coffee, probably ever. So strap in.
+        </p>
+      </div>
+
+      <div class="community">
+          <i class="fa fa-users fa-4x"></i>
           <p>
-            We realize that you don’t have time to listen to the person in front
-             of you list 18 drink modifications for their Pumpkin Spice Latte, so
-             we did away with that by only brewing <span class="blue-text">one type
-             of coffee</span>, with one type of Moka Pot, period. This also affords
-             us the opportunity to select, roast, and brew the shit out of the best
-             damn cup of coffee, probably ever. So strap in.
+            Seeing your awesome faces on a daily basis, we are reminded that we
+            are members of a <span class="blue-text">kickass community</span>.
+            We act on this by offering complimentary catering services for local
+            events, fundraising for local charities, and fostering strong
+            relationships in our community by hosting a volunteering job fair
+            every Sunday.
           </p>
         </div>
-
-        <div class="community">
-            <i class="fa fa-users fa-4x"></i>
-            <p>
-              Seeing your awesome faces on a daily basis, we are reminded that we
-              are members of a <span class="blue-text">kickass community</span>.
-              We act on this by offering complimentary catering services for local
-              events, fundraising for local charities, and fostering strong
-              relationships in our community by hosting a volunteering job fair
-              every Sunday.
-            </p>
-          </div>
-        </div>
+      </div>
     </section>
+
+
+    <figure class="beans-cup">
+      <img class="beans-img" src="image/beans.jpg" alt="selecting the highest quality beans" />
+      <img class="stovetop-img" src="image/perfect-cup.jpg" alt="to get the perfect cup every time" />
+    </figure>
+
 
     <section class="menu">
       <a id="menu"></a>
@@ -146,40 +156,38 @@
       </div>
     </section>
 
-      <section class="contact">
-        <a id="contact"></a>
-        <h2 class="black-section-title">
-          contact &nbsp;<span class="blue-text-title">Damn. Fine.</span>
-        </h2>
+
+    <section class="contact">
+      <a id="contact"></a>
+      <h2 class="black-section-title">
+        contact &nbsp;<span class="blue-text-title">Damn. Fine.</span>
+      </h2>
+
+      <form id="contactForm">
+        <input id="nameField" type="text" name="name" placeholder="YOUR NAME"><br>
+        <input id="emailField" type="text" name="email" placeholder="YOUR EMAIL"><br>
+        <textarea placeholder="YOUR MESSAGE" name="message" cols="25" rows="4"></textarea>
+        <div class="button-container">
+          <input class="submit" type="submit" value="SUBMIT" />
+        </div>
+      </form>
+      <div class="formSubmit">Thanks for reaching out, our mail gnomes
+        will be in touch shortly<br><br><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
+    </section>
 
 
+    <section class="map">
+      <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=14&center=49.2820%2C-123.1171&key=AIzaSyC3xJP8SfE7EFSSx-6cHkr-iqYQO8SKORA" allowfullscreen></iframe>
+    </section>
 
 
-
-        <form id="contactForm">
-          <input id="nameField" type="text" name="name" placeholder="YOUR NAME"><br>
-          <input id="emailField" type="text" name="email" placeholder="YOUR EMAIL"><br>
-          <textarea placeholder="YOUR MESSAGE" name="message" cols="25" rows="4"></textarea>
-          <div class="button-container">
-            <input class="submit" type="submit" value="SUBMIT" />
-          </div>
-        </form>
-        <div class="formSubmit">Thanks for reaching out, our mail gnomes
-          will be in touch shortly<br><br><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
-      </section>
-
-
-
-      <section class="map">
-        <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=14&center=49.2820%2C-123.1171&key=AIzaSyC3xJP8SfE7EFSSx-6cHkr-iqYQO8SKORA" allowfullscreen></iframe>
-      </section>
     <footer>
       <div class="social">
         <ul class="social-icons">
-          <li><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li>
-          <li><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></li>
-          <li><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
-          <li><i class="fa fa-pinterest fa-2x" aria-hidden="true"></i></li>
+          <li><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i><a></li>
+          <li><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i><a></li>
+          <li><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i><a></li>
+          <li><a href="#"><i class="fa fa-pinterest fa-2x" aria-hidden="true"></i><a></li>
         </ul>
       </div>
 
@@ -191,7 +199,6 @@
         <p>
           111-111-1112
         </p>
-
         <p>
           123 Somewhere Ave
         </p>
@@ -201,7 +208,9 @@
       </div>
     </footer>
 
+
     <script src="js/jquery.js"></script>
     <script src="js/script.js"></script>
 
   </body>
+</html>

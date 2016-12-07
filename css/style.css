@@ -11,7 +11,6 @@
 
 }
 
-
 @font-face {
     font-family: 'latoregular';
     src: url('../font/lato-regular-webfont.eot');
@@ -23,7 +22,6 @@
 
 }
 
-
 @font-face {
     font-family: 'ovoregular';
     src: url('../font/ovo-regular-webfont.eot');
@@ -34,6 +32,7 @@
     font-style: normal;
 
 }
+
 
 h1 {
   font-family: 'latoregular', sans-serif;
@@ -83,6 +82,7 @@ p {
   flex-flow: row;
   padding-bottom: 15px;
 }
+
 
 
 /* navbar styles */
@@ -164,9 +164,9 @@ nav {
     color: #1ac0ee;
     transition: 1s;
   }
-
-
 }
+
+
 
 /* header styles */
 
@@ -214,6 +214,7 @@ header {
 }
 
 
+
 /* mission section styles */
 
 .mission {
@@ -252,6 +253,7 @@ header {
     opacity: 0;
 }
 
+
 @media all and (min-width: 600px) {
   .mission {
     padding: 200px 0;
@@ -271,6 +273,7 @@ header {
     width: 40%;
   }
 }
+
 
 
 /* about section styles */
@@ -325,6 +328,36 @@ header {
 }
 
 
+
+/* figure section styles */
+
+.beans-cup {
+  display: flex;
+  flex-flow: column;
+}
+
+.beans-cup img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+
+@media all and (min-width: 600px) {
+  .beans-cup {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .beans-cup img {
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+  }
+}
+
+
+
 /* menu section styles */
 
 .menu {
@@ -355,11 +388,14 @@ header {
   float: right;
 }
 
+
 @media all and (min-width: 600px) {
   .menu p {
     padding: 5px 50px;
   }
 }
+
+
 
 /* seriously section styles */
 
@@ -385,6 +421,8 @@ header {
   letter-spacing: 4px;
   padding: 15px 0;
 }
+
+
 
 /* contact section styles */
 
@@ -440,11 +478,14 @@ input, textarea {
    color: #030303;
 }
 
+
 @media all and (min-width: 600px) {
   form {
     padding: 50px 10%;
   }
 }
+
+
 
 /* map section styles */
 
@@ -453,12 +494,15 @@ iframe {
   width: 100%;
 }
 
+
 @media all and (min-width: 600px) {
   iframe {
     height: 500px;
     width: 100%;
   }
 }
+
+
 
 /* footer section styles */
 
@@ -486,3 +530,7 @@ footer a {
 	color: white;
   font-size: 0.75rem;
 }
+
+footer i:hover {
+  color: #1ac0ee;
+  transition: 1s;
