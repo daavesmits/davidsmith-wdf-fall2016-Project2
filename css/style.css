@@ -199,7 +199,7 @@ nav {
 header {
   position: relative;
   display: block;
-  height: 30vh;
+  height: 45vh;
   width: auto;
   background:
     -webkit-linear-gradient(
@@ -220,6 +220,8 @@ header {
   position: relative;
   top: 25%;
   right: 3%;
+  display: flex;
+  flex-flow: column;
 }
 
 .hero-title h1 {
@@ -540,7 +542,7 @@ input, textarea {
   font-size: 1.5rem;
   text-align: center;
   line-height: 1.25;
-  padding: 154px 150px;
+  padding: 154px 5%;
 }
 
 ::-webkit-input-placeholder {
@@ -552,6 +554,10 @@ input, textarea {
 @media all and (min-width: 600px) {
   form {
     padding: 50px 10%;
+  }
+
+  .formSubmit {
+    padding: 154px 150px;
   }
 }
 
