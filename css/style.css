@@ -172,7 +172,7 @@ header {
 
 @media all and (min-width: 600px) {
   header {
-    height: 40vh;
+    height: 60vh;
   }
 
   .hero-title {
@@ -216,6 +216,9 @@ header {
 
 
 @media all and (min-width: 600px) {
+  .mission {
+    padding: 200px 0;
+  }
   .mission h3 {
     width: 50%;
   }
@@ -261,9 +264,6 @@ i {
     display: flex;
   }
 
-  .eco, .coffee, .community {
-
-  }
 
   .about p {
     padding: 0 20%;
