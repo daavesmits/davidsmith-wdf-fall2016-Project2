@@ -39,4 +39,24 @@ $(function() {
 
      });
 
-});
+
+     $('#contactForm').on('submit', function(e){
+       e.preventDefault();
+       $(this).fadeOut(2000);
+
+       if ( $('#nameField').val() == '' ) {
+         alert('Please Enter Your Name.');
+       }
+
+       if ( $('#emailField').val() == '' ) {
+         alert('Please Enter Your Email.');
+
+       } else {
+         alert('Thanks for contacting us!');
+       }
+
+    //  $("#contactForm").submit(function(e) {
+    //  e.preventDefault();
+  });
+
+ });
